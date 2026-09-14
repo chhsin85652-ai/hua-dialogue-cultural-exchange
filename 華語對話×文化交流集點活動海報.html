@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!-- saved from url=(0108)file:///C:/Users/fy/AppData/Local/Temp/73c0fee8-84f6-4617-9b8a-dc40fc3b4b68_poster_zh.zip.b68/poster_zh.html -->
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>華語對話×文化交流集點活動海報</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./華語對話×文化交流集點活動海報_files/css2" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FFF6E8;
+    --coral:#FF6B4A;
+    --coral-dark:#C8461F;
+    --teal:#1E9E8C;
+    --teal-dark:#0E5F52;
+    --yellow:#FFC93C;
+    --yellow-dark:#8A5A00;
+    --purple:#7B61E0;
+    --purple-dark:#3E2E8C;
+    --navy:#22303F;
+    --paper:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:#E9E2D0;
+    font-family:'Nunito',sans-serif;
+    display:flex;
+    justify-content:center;
+    padding:40px 0;
+  }
+  .poster{
+    width:900px;
+    background:var(--cream);
+    position:relative;
+    overflow:hidden;
+    border-radius:28px;
+    box-shadow:0 30px 60px rgba(0,0,0,0.18);
+  }
+  /* decorative blobs */
+  .blob{position:absolute;border-radius:50%;}
+  .blob1{width:260px;height:260px;background:var(--yellow);top:-90px;right:-90px;opacity:0.9;}
+  .blob2{width:180px;height:180px;background:var(--teal);opacity:0.15;bottom:120px;left:-70px;}
+  .blob3{width:120px;height:120px;background:var(--purple);opacity:0.15;top:260px;right:40px;}
+
+  header{
+    position:relative;
+    padding:56px 60px 30px;
+    text-align:center;
+    z-index:2;
+  }
+  .eyebrow{
+    display:inline-block;
+    background:var(--coral);
+    color:#FFF4EE;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:17px;
+    padding:9px 24px;
+    border-radius:999px;
+    transform:rotate(-3deg);
+    box-shadow:3px 4px 0 var(--coral-dark);
+  }
+  h1{
+    font-family:'Baloo 2',sans-serif;
+    font-weight:800;
+    color:var(--navy);
+    font-size:58px;
+    line-height:1.15;
+    margin-top:22px;
+  }
+  h1 .accent{
+    color:var(--coral);
+  }
+  h1 .accent2{
+    color:var(--teal-dark);
+  }
+  .subtitle{
+    font-family:'Baloo 2',sans-serif;
+    font-weight:600;
+    font-size:25px;
+    color:var(--purple-dark);
+    margin-top:14px;
+  }
+
+  .chat-scene{
+    position:relative;
+    height:150px;
+    margin:18px 0 6px;
+  }
+  .bubble{
+    position:absolute;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:28px;
+    padding:17px 28px;
+    border-radius:26px;
+    color:#fff;
+  }
+  .bubble.left{
+    background:var(--teal);
+    top:10px;
+    left:120px;
+    border-bottom-left-radius:6px;
+    transform:rotate(-4deg);
+  }
+  .bubble.right{
+    background:var(--coral);
+    top:60px;
+    right:120px;
+    border-bottom-right-radius:6px;
+    transform:rotate(3deg);
+  }
+  .bubble .small{
+    display:block;
+    font-family:'Nunito',sans-serif;
+    font-weight:700;
+    font-size:15px;
+    opacity:0.9;
+    margin-top:2px;
+  }
+
+  .period{
+    text-align:center;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    color:var(--navy);
+    font-size:21px;
+    background:#fff;
+    display:inline-block;
+    padding:10px 28px;
+    border-radius:999px;
+    border:3px dashed var(--yellow);
+    margin-top:6px;
+  }
+  .period-wrap{text-align:center;position:relative;z-index:2;}
+
+  main{
+    position:relative;
+    z-index:2;
+    padding:10px 56px 20px;
+  }
+
+  .cards{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+    margin-top:26px;
+  }
+  .card{
+    background:var(--paper);
+    border-radius:20px;
+    padding:20px 22px;
+    box-shadow:0 6px 0 rgba(34,48,63,0.08);
+  }
+  .card .tag{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:38px;height:38px;
+    border-radius:12px;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:800;
+    font-size:20px;
+    color:#fff;
+    margin-bottom:10px;
+  }
+  .card.tag-teal .tag{background:var(--teal);}
+  .card.tag-coral .tag{background:var(--coral);}
+  .card.tag-purple .tag{background:var(--purple);}
+  .card.tag-yellow .tag{background:var(--yellow-dark);}
+  .card h3{
+    font-family:'Baloo 2',sans-serif;
+    font-size:20px;
+    color:var(--navy);
+    margin-bottom:8px;
+  }
+  .card p{
+    font-size:16.5px;
+    color:#45505C;
+    line-height:1.55;
+  }
+  .card p b{color:var(--navy);}
+
+  .rules{
+    margin-top:24px;
+    background:#fff;
+    border-radius:22px;
+    padding:22px 26px;
+    position:relative;
+  }
+  .rules::before{
+    content:"活動規則";
+    position:absolute;
+    top:-16px;left:26px;
+    background:var(--purple);
+    color:#fff;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:17px;
+    padding:7px 20px;
+    border-radius:999px;
+  }
+  .rules ul{
+    list-style:none;
+    margin-top:14px;
+    display:grid;
+    gap:10px;
+  }
+  .rules li{
+    font-size:16.5px;
+    color:#3B4552;
+    line-height:1.55;
+    padding-left:26px;
+    position:relative;
+  }
+  .rules li::before{
+    content:"●";
+    color:var(--coral);
+    position:absolute;
+    left:0;
+    top:1px;
+    font-size:11px;
+  }
+  .rules li b{color:var(--navy);}
+
+  .gift-strip{
+    margin-top:22px;
+    background:var(--yellow);
+    border-radius:20px;
+    padding:16px 24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    transform:rotate(-1deg);
+  }
+  .gift-strip .left-text{
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    color:var(--yellow-dark);
+    font-size:19px;
+  }
+  .gift-strip .right-text{
+    font-family:'Baloo 2',sans-serif;
+    font-weight:800;
+    color:var(--yellow-dark);
+    font-size:25px;
+  }
+
+  footer{
+    position:relative;
+    z-index:2;
+    margin-top:28px;
+    background:var(--navy);
+    padding:26px 56px 34px;
+    color:#EFEAE0;
+  }
+  footer .row{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:20px;
+  }
+  footer h4{
+    font-family:'Baloo 2',sans-serif;
+    font-size:18px;
+    margin-bottom:8px;
+    color:#FFD98A;
+  }
+  footer p{font-size:15.5px;line-height:1.65;color:#D8D2C4;}
+  footer a{color:#FFD98A;text-decoration:none;}
+  .deadline-badge{
+    background:var(--coral);
+    color:#fff;
+    font-family:'Baloo 2',sans-serif;
+    font-weight:700;
+    font-size:15px;
+    padding:9px 18px;
+    border-radius:12px;
+    white-space:nowrap;
+  }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+
+  <header>
+    <span class="eyebrow">開放報名中</span>
+    <h1>華語<span class="accent">對話</span><br>×文化<span class="accent2">交流</span>集點</h1>
+    <div class="subtitle">聊聊天，順便把禮物集回家</div>
+
+    <div class="chat-scene">
+      <div class="bubble left">你好!<span class="small">來交朋友</span></div>
+      <div class="bubble right">加油!<span class="small">越聊越熟</span></div>
+    </div>
+
+    <div class="period-wrap">
+      <div class="period">2026年9月14日 — 11月30日</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="cards">
+      <div class="card tag-teal">
+        <div class="tag">⏰</div>
+        <h3>預約時段</h3>
+        <p><b>週一至週五</b>，08:30 – 12:00<br>請於 <b>11:00 前</b> 抵達，每日限額 <b>5 名</b>。</p>
+      </div>
+      <div class="card tag-coral">
+        <div class="tag">📍</div>
+        <h3>練習地點</h3>
+        <p><b>華語文中心</b> — 吳大猷紀念圖書館側門六樓，出電梯後左手邊。</p>
+      </div>
+      <div class="card tag-purple">
+        <div class="tag">👥</div>
+        <h3>報名對象</h3>
+        <p>全校<b>境外生</b>（不含華語母語者及以華語為主要使用語言者）。</p>
+      </div>
+      <div class="card tag-yellow">
+        <div class="tag">💬</div>
+        <h3>交流方式</h3>
+        <p>每次對話 <b>20 分鐘以上</b>，全程以<b>中文</b>進行交流。</p>
+      </div>
+    </div>
+
+    <div class="rules">
+      <ul>
+        <li>每次對話可記<b>服務時數 1 小時</b> — 當日結束後請至華語文中心找助理蓋章。</li>
+        <li>累積滿 <b>20 點</b> 就能兌換可愛小禮物。</li>
+        <li>預約<b>未到累計滿 3 次</b>，將暫時失去交流機會，記得準時出席喔！</li>
+        <li>送出表單後，請留意確認信件，並以信件內容為準。</li>
+      </ul>
+    </div>
+
+    <div class="gift-strip">
+      <span class="left-text">兌換截止日</span>
+      <span class="right-text">2026/12/18</span>
+    </div>
+  </main>
+
+  <footer>
+    <div class="row">
+      <div>
+        <h4>有疑問嗎？歡迎來信詢問</h4>
+        <p>華語文中心助理 — 張芯瑜<br>
+        Email: <a href="mailto:v0118@fy.edu.tw">v0118@fy.edu.tw</a></p>
+      </div>
+      <div class="deadline-badge">每日 5 名</div>
+    </div>
+  </footer>
+</div>
+
+
+</body></html>
